@@ -63,3 +63,34 @@ for(let y = 10; y >= 1; y-- ){
 }
 
 // this is the way I fixed master branch 
+// While loop
+// In While loop, we have declare variables 
+let e = 0;
+while(e <=5){
+    if(e % 2 !== 0 )console.log(e);
+    e++;
+}
+
+// Do While loop
+// can do at least once 
+let c = 9 
+do{
+    if(c % 2 !== 0) console.log(c);
+    c++;
+} while(c <=5 );
+
+// Infinite Loop
+// execute infinitely or forever
+// For in 
+const person = {
+    name: 'John',
+    age: 30
+}
+
+for (let key in person)
+console.log(key, person[key]);
+
+const colors = ['red','blue','green'];
+
+for(let index in colors)
+console.log(index, colors[index]);
