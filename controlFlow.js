@@ -46,3 +46,19 @@ switch (role){
 if (role === 'guest') console.log('Guest')
 else if (role === 'moderator') console.log('Moderator')
 else console.log('Unknown User');
+
+// For loops
+// for(initialExpression; condition ; increment expression)
+// statement 
+
+for(let i = 1; i <=5 ; i++){
+    // console.log('Hello John', i);
+    if (i % 2 !== 0) console.log(i)
+
+}
+
+// reverse order 
+for(let y = 10; y >= 1; y-- ){
+    if(y % 4 !== 0 ) console.log('not divide for number 4',y );
+}
+
