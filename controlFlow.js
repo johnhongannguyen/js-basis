@@ -62,3 +62,4 @@ for(let y = 10; y >= 1; y-- ){
     if(y % 4 !== 0 ) console.log('not divide for number 4',y );
 }
 
+// this is the way I fixed master branch 
