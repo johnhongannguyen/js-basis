@@ -92,5 +92,25 @@ console.log(key, person[key]);
 
 const colors = ['red','blue','green'];
 
-for(let index in colors)
-console.log(index, colors[index]);
+// for(let index in colors)
+// console.log(index, colors[index]);
+
+// For of 
+for(let color of colors)
+ console.log(color)
+
+ // break and continue 
+ let x = 0;
+ while(x <=10){
+     // jump out of the loop
+     if( x === 5)break;
+     // continue the loop
+     if(x % 2 === 0){
+         x++;
+         continue;
+     }
+
+
+    console.log(x);
+    x++;
+ }
