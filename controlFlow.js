@@ -23,3 +23,21 @@ else if(hour >= 12 && hour < 18)
     console.log('Good afternoon');
 else
 console.log ('Good evening');
+
+// switch... case
+
+let role; 
+// in parentheses we add variable
+switch (role){
+    case 'guest':
+        console.log('Guest user');
+        break; // the reason to add 'break' is avoiding executing the next argument
+
+
+    case 'moderator':
+        console.log('Moderator user');
+        break;
+
+    default:
+        console.log('Unkown User');
+}
