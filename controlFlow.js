@@ -39,5 +39,10 @@ switch (role){
         break;
 
     default:
-        console.log('Unkown User');
+        console.log('Unknown User');
 }
+
+// if condition 
+if (role === 'guest') console.log('Guest')
+else if (role === 'moderator') console.log('Moderator')
+else console.log('Unknown User');
