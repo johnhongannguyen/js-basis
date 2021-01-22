@@ -114,3 +114,32 @@ for(let color of colors)
     console.log(x);
     x++;
  }
+// write a function that takes 2 numbers and return the maximum of two 
+
+// let a = 10;
+// let b = 12; 
+// function max(){
+//     let max; 
+//     if(max = a>b){
+//         console.log(`Max number is ${max}`);
+//     }
+//     else
+//     console.log(`Max number is ${b} `)
+// }
+
+// console.log(max());
+
+// other solution
+let number = max(32,20);
+console.log(number);
+function max(number1,number2){
+    // using if condition
+    // if(number1 > number2)
+    // return number1;
+    // return number2;
+    
+
+    // Using Ternary Operator
+   return (number1 > number2) ? number1 : number2;
+
+}
