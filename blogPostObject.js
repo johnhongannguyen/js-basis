@@ -6,21 +6,21 @@
 // (author, body)
 // isLive
 
-const blog = {
-    title: 'This is my first blog',
-    body: 'There is a lot of things need to tell you in my post',
-    author: 'John Nguyen',
-    views: 5, 
-    comments: [
-        {
-            author: 'Dean',
-            body: 'great'
-        },
-        {
-            author: 'Don',
-            body: 'keep working'
-        }
-    ],
-    isLive: true,
-}
+const blog = new BlogPost('First Post','Message','John Nguyen');
 console.log(blog);
+
+// use constructor function to create a post object 
+// views = 0 
+// comments = []
+// isLive = false
+// because it's not published yet 
+
+function BlogPost(title, body, author){
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+    
+}
