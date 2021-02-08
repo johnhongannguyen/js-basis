@@ -18,4 +18,17 @@ const numbers = [-1,-2,1, 2,3];
 
 const filtered = numbers.filter(value => value >= 0);
 
+// mapping an array 
+// mapping to a string
+const item = filtered.map(n => '<li>' + n + '</li>');
+const html = '<ul>' + item.join('') + '</ul>';
 console.log(filtered);
+console.log(item);
+console.log(html);
+
+
+
+
+
+
+
