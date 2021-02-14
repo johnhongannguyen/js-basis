@@ -22,5 +22,5 @@ function getMax(array){
     //     return max;
 
     //solution 2
-    return array.reduce((accumulator,current) => (accumulator,current) ? accumulator : current);
+    return array.reduce((accumulator,current) => (accumulator,current) ? current : accumulator);
 }
