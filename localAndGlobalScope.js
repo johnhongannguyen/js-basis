@@ -15,12 +15,17 @@ const video = {
         console.log(this);
     },
     showTags(){
+        // changing this
+        // const self = this;
         // this is just a regular function- it's not a method in the video obj
         // the method is just only showTags
         // this references global obj
+
+        //bind is the second solution for this problem
+        // arrow function inherit this from the containing function
         this.tags.forEach(function(tag){
             console.log(this.title,tag);
-        }, this);
+        }.bind(this));
     }
 }; 
 video.showTags();
@@ -36,16 +41,36 @@ video.stop();
 // get video object
 video.play();
 
-function playVideo() {
-    console.log(this);
-}
-// get window obj 
-playVideo();
+// function playVideo() {
+//     console.log(this);
+// }
+// // get window obj 
+// playVideo();
 
-function Video (title){
-    this.title = title;
-    console.log(this);
-}
-// instead get a window obj, we get a new obj
-// because when we use the new operator , this new operator creates a new empty object
-const v = new Video('b');// like this {}
+// function Video (title){
+//     this.title = title;
+//     console.log(this);
+// }
+// // instead get a window obj, we get a new obj
+// // because when we use the new operator , this new operator creates a new empty object
+// const v = new Video('b');// like this {}
+
+
+
+// the functions are objects in Javascript
+// function playVideo(){
+//     console.log(this);
+// }
+
+// playVideo.call({name:'John'});
+// playVideo.apply({name:'Nguyen'});
+// playVideo.bind({name:'John'});
+
+// playVideo();
+
+// recap 
+// learning 3 ways to change the value of this 
+
+// fist solution - const self = this
+// second solution - the bind method - and pass this as argument
+// use arrow function
